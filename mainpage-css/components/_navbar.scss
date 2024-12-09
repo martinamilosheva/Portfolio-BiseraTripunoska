@@ -1,0 +1,23 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+header {
+  background-color: var.$background-color-base;
+  padding: var.$gutter-medium;
+
+  nav {
+    @extend %wrap;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: var.$gutter-base;
+
+      a {
+        color: var.$text-color-base;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

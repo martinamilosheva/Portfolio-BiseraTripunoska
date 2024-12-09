@@ -1,0 +1,32 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.back {
+  display: flex;
+  color: black;
+  gap: 10px;
+  align-items: baseline;
+  padding: 10px;
+  a {
+    color: black;
+  }
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    @extend %wrap;
+    gap: var.$gutter-base;
+    width: 50%;
+
+    @include mix.mobile-l-styles {
+        width: 80%;
+        gap: 0;
+    }
+}
