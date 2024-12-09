@@ -1,0 +1,78 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+footer {
+  background-color: white;
+  @extend %section;
+  border-top: 1px solid var.$text-color-base;
+  border-bottom: 1px solid var.$text-color-base;
+  color: var.$text-color-base;
+
+  .wrapper {
+    @extend %wrap;
+
+     .back {
+      display: flex;
+      color: var.$text-color-base;
+      gap: 10px;
+      align-items: baseline;
+      padding-block: var.$gutter-base;
+      a {
+        color: var.$text-color-base;
+      }
+    }
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    gap: var.$gutter-base;
+    justify-content: center;
+    align-items: center;
+    @include mix.mobile-l-styles {
+      margin-top: var.$gutter-base *2;
+    }
+
+    ul {
+      display: flex;
+      background-color: var.$background-color-button4;
+      padding: var.$gutter-medium;
+      border-radius: 20px;
+      gap: var.$gutter-medium;
+      border: none;
+
+      li {
+        i {
+          color: var.$background-color-button4;
+          background-color: var.$background-color-icon2;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 50%;
+          text-align: center;
+          @include mix.mobile-l-styles {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+
+    a {
+      background-color: var.$background-color-button4;
+      text-transform: uppercase;
+      padding: var.$gutter-medium;
+      border-radius: 20px;
+      color: var.$background-color-icon2;
+      text-align: center;
+    }
+  }
+}
