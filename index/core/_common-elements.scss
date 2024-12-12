@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-base;
+  line-height: var.$line-height-base;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 35px;
+  text-align: center;
+  font-weight: normal;
+  color: var.$text-color-base;
+}
+
+h4 {
+  font-weight: normal;
+  color: var.$text-color-base;
+  font-size: 20px;
+}
+

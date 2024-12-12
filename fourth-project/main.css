@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: left;
+  margin-inline: 50px;
+  color: rgb(77, 76, 76);
+  font-weight: normal;
+}
+
+.catalogue .button .button {
+  background-color: #9fc085;
+  color: white;
+  display: inline-block;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+  transition: color 0.3s ease-in, background-color 0.3s ease-out;
+  width: 300px;
+}
+.catalogue .button .button:hover {
+  background-color: #82ac61;
+}
+
+header nav {
+  padding: 10px;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+header nav ul a {
+  color: #757575;
+  font-size: 20px;
+}
+header nav ul img {
+  width: 50px;
+}
+header .banner {
+  background-color: #e6e6e4;
+}
+header .banner .carousel-item {
+  height: calc(100vh - 60px);
+}
+
+.catalogue .list li a {
+  color: #9fc085;
+  font-weight: bold;
+  font-size: 18px;
+}/*# sourceMappingURL=main.css.map */

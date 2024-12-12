@@ -1,0 +1,19 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.catalogue {
+  .button {
+    @extend %green-button;
+  }
+
+  .list {
+    li {
+      a {
+        color: var.$btn-green;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+}
