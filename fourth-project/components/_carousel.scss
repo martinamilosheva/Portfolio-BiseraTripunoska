@@ -1,0 +1,10 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.carousel-item {
+  .btn-warning {
+    width: 30%;
+    color: white;
+  }
+}

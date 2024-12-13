@@ -4,16 +4,11 @@
 
 header {
   nav {
-    padding: 10px;
     ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       gap: 40px;
 
       a {
         color: var.$text-color-base;
-        font-size: 20px;
       }
 
       img {
@@ -26,7 +21,7 @@ header {
     background-color: var.$background-color-primary;
 
     .carousel-item {
-      height: calc(100vh - 60px);
+      height: calc(100vh - 74px);
     }
   }
 }
