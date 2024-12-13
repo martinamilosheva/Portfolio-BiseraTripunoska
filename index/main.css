@@ -63,6 +63,7 @@ h3 {
 
 h4 {
   font-weight: normal;
+  text-align: center;
   color: #757575;
   font-size: 20px;
 }
@@ -229,11 +230,12 @@ main .wrapper .logo img {
 .projects .project .site .image {
   display: flex;
   justify-content: flex-start;
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 .projects .project .site .image .bloom {
   border: 1px solid black;
   border-radius: 50px;
+  transform: rotateY(-30deg) rotateX(15deg);
 }
 .projects .project .site .image img {
   width: 40%;
