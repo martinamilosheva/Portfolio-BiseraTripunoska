@@ -3,11 +3,9 @@
 @use "sass:math";
 
 .mission {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var.$text-color-base;
+  @include mix.flex-container($flex-direction: column);
   @extend %section;
+  color: var.$text-color-base;
   text-align: center;
 
   p {
@@ -24,8 +22,7 @@
 }
 
 .offers {
-  display: flex;
-  flex-direction: column;
+  @include mix.flex-container($flex-direction: column);
   align-items: flex-start;
   color: var.$text-color-base;
   @extend %section;

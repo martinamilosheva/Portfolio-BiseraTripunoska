@@ -46,6 +46,7 @@ body {
 h1 {
   font-size: 40px;
   font-weight: normal;
+  text-align: center;
 }
 
 h2 {
@@ -68,6 +69,11 @@ footer .wrapper, .main .wrapper, .navbar .menu, .navbar .search {
   margin-inline: auto;
 }
 
+footer {
+  border-top: 1px solid #757575;
+  border-bottom: 1px solid #757575;
+}
+
 .navbar {
   background-color: #d5e5df;
 }
@@ -88,14 +94,17 @@ footer .wrapper, .main .wrapper, .navbar .menu, .navbar .search {
 }
 .navbar .search {
   display: flex;
+  flex-direction: row;
   gap: 1.875rem;
   justify-content: center;
   align-items: center;
 }
 .navbar .search .search-input {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  gap: 1.875rem;
   justify-content: center;
+  align-items: center;
   position: relative;
   width: 50%;
 }
@@ -119,7 +128,8 @@ footer .wrapper, .main .wrapper, .navbar .menu, .navbar .search {
 .main .mental-health {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  gap: 1.875rem;
+  justify-content: center;
   align-items: center;
   color: #757575;
 }
@@ -151,6 +161,8 @@ footer .wrapper, .main .wrapper, .navbar .menu, .navbar .search {
 .mission {
   display: flex;
   flex-direction: column;
+  gap: 1.875rem;
+  justify-content: center;
   align-items: center;
   color: #757575;
   text-align: center;
@@ -170,6 +182,9 @@ footer .wrapper, .main .wrapper, .navbar .menu, .navbar .search {
 .offers {
   display: flex;
   flex-direction: column;
+  gap: 1.875rem;
+  justify-content: center;
+  align-items: center;
   align-items: flex-start;
   color: #757575;
 }
@@ -217,9 +232,10 @@ footer .wrapper, .main .wrapper, .navbar .menu, .navbar .search {
 .team {
   display: flex;
   flex-direction: column;
+  gap: 1.875rem;
+  justify-content: center;
   align-items: center;
   color: #757575;
-  text-align: center;
   gap: 1.875rem;
 }
 .team h1 {
@@ -233,6 +249,9 @@ footer .wrapper, .main .wrapper, .navbar .menu, .navbar .search {
 .team .person {
   display: flex;
   flex-direction: column;
+  gap: 1.875rem;
+  justify-content: center;
+  align-items: center;
   gap: 1.875rem;
 }
 @media (max-width: 425px) {
@@ -255,10 +274,8 @@ footer .wrapper, .main .wrapper, .navbar .menu, .navbar .search {
 }
 
 footer {
-  background-color: white;
-  border-top: 1px solid #757575;
-  border-bottom: 1px solid #757575;
   color: #757575;
+  background-color: white;
 }
 footer .wrapper .back {
   display: flex;
@@ -292,7 +309,6 @@ footer .icons ul {
   background-color: #1c3e3a;
   padding: 0.9375rem;
   border-radius: 20px;
-  gap: 0.9375rem;
   border: none;
 }
 footer .icons ul li i {

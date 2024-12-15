@@ -3,12 +3,9 @@
 @use "sass:math";
 
 .team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var.$text-color-base;
+  @include mix.flex-container($flex-direction: column);
   @extend %section;
-  text-align: center;
+  color: var.$text-color-base;
   gap: var.$gutter-base;
 
   h1 {
@@ -19,8 +16,7 @@
   }
 
   .person {
-    display: flex;
-    flex-direction: column;
+    @include mix.flex-container($flex-direction: column);
     gap: var.$gutter-base;
 
     @include mix.mobile-l-styles {

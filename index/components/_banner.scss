@@ -10,14 +10,10 @@ main {
 
     .banner {
       @extend %section;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      @include mix.flex-container ($justify-content:flex-start);
       color: var.$text-color-base;
-      align-items: center;
-      text-align: center;
       height: 40vh;
-      width: 40%;
+      width: 50%;
 
       @include mix.mobile-l-styles {
         width: 100%;

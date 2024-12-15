@@ -3,7 +3,7 @@
 @use "sass:math";
 
 .main {
-  background-color: var.$background-color-primary-2;
+  background-color: var.$background-color-primary;
 
   .wrapper {
     @extend %wrap;
@@ -11,10 +11,7 @@
 
   .mental-health {
     @extend %section;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    @include mix.flex-container($flex-direction: column);
     color: var.$text-color-base;
 
     h1 {

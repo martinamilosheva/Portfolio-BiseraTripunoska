@@ -3,16 +3,15 @@
 @use "sass:math";
 
 footer {
-  background-color: white;
   @extend %section;
-  border-top: 1px solid var.$text-color-base;
-  border-bottom: 1px solid var.$text-color-base;
+  @extend %border;
   color: var.$text-color-base;
+  background-color: white;
 
   .wrapper {
     @extend %wrap;
 
-     .back {
+    .back {
       display: flex;
       color: var.$text-color-base;
       gap: 10px;
@@ -31,13 +30,9 @@ footer {
   }
 
   .icons {
-    display: flex;
-    flex-direction: column;
-    gap: var.$gutter-base;
-    justify-content: center;
-    align-items: center;
+    @include mix.flex-container($flex-direction: column);
     @include mix.mobile-l-styles {
-      margin-top: var.$gutter-base *2;
+      margin-top: var.$gutter-base * 2;
     }
 
     ul {
@@ -45,7 +40,6 @@ footer {
       background-color: var.$background-color-button4;
       padding: var.$gutter-medium;
       border-radius: 20px;
-      gap: var.$gutter-medium;
       border: none;
 
       li {

@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
 @use "sass:math";
 
 html {
@@ -14,6 +15,10 @@ body {
 h1 {
   font-weight: normal;
   font-size: 55px;
+
+  @include mix.tablet-styles {
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -35,4 +40,3 @@ h4 {
   color: var.$text-color-base;
   font-size: 20px;
 }
-

@@ -3,7 +3,7 @@
 @use "sass:math";
 
 .navbar {
-  background-color: var.$background-color-primary-2;
+  background-color: var.$background-color-primary;
 
   .menu {
     @extend %wrap;
@@ -26,17 +26,12 @@
   }
 
   .search {
-    display: flex;
-    gap: var.$gutter-base;
-    justify-content: center;
-    align-items: center;
+    @include mix.flex-container($flex-direction: row);
     @extend %wrap;
     @extend %section;
 
     .search-input {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include mix.flex-container($flex-direction: row);
       position: relative;
       width: 50%;
 

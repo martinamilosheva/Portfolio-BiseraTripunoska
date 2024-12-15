@@ -5,10 +5,7 @@
 .contact {
   background-color: var.$background-color-secondary;
   @extend %section;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include mix.flex-container($justify-content: center);
   color: var.$text-color-secondary;
 
   h3 {
@@ -35,6 +32,6 @@
   align-items: flex-end;
 
   a {
-     color: var.$text-color-secondary;
+    color: var.$text-color-secondary;
   }
 }
