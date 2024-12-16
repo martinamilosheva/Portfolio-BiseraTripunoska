@@ -43,7 +43,7 @@ ul {
   text-align: center;
   font-size: 20px;
   transition: color 0.3s ease-in, background-color 0.3s ease-out;
-  width: 230px;
+  width: 270px;
 }
 .catalogue .button .button:hover {
   background-color: #82ac61;
@@ -61,10 +61,8 @@ body {
 
 h1 {
   font-size: 70px;
-  text-align: left;
   margin-inline: 50px;
   color: rgb(77, 76, 76);
-  font-weight: normal;
 }
 @media (max-width: 768px) {
   h1 {
@@ -97,7 +95,7 @@ header .banner .carousel-item {
 .catalogue .list li a {
   color: #9fc085;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .carousel-item .button-orange {
