@@ -1,0 +1,27 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+header {
+  nav {
+    ul {
+      gap: 40px;
+
+      a {
+        color: var.$text-color-base;
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .banner {
+    background-color: var.$background-color-primary;
+
+    .carousel-item {
+      height: calc(100vh - 74px);
+    }
+  }
+}

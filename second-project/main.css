@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fde7e8;
+  padding-top: 81px;
+  padding-bottom: 81px;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 30px;
+}
+h1 span {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.banner, .popular, .recommended,
+.image {
+  padding-block: 2.8125rem;
+}
+@media (max-width: 425px) {
+  .banner, .popular, .recommended,
+  .image {
+    padding-block: 1.875rem;
+  }
+}
+
+.banner, .popular, .recommended,
+.image, .back {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.recommended a,
+.image a, .details a {
+  color: black;
+  background-color: #efbdc1;
+  padding: 0.625rem;
+  margin-top: 1.875rem;
+}
+
+.popular, .recommended,
+.image, .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-block: 20px;
+  z-index: 1000;
+  text-align: center;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.banner {
+  text-align: center;
+}
+.banner .banner-image {
+  text-align: center;
+  position: relative;
+  padding-bottom: 0;
+}
+@media (max-width: 425px) {
+  .banner .banner-image {
+    text-align: left;
+  }
+}
+.banner .banner-image .star-1 {
+  position: absolute;
+  top: 30px;
+  left: 150px;
+  font-size: 80px;
+}
+@media (max-width: 768px) {
+  .banner .banner-image .star-1 {
+    left: 10px;
+    font-size: 40px;
+  }
+}
+.banner .banner-image .star-2 {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  font-size: 60px;
+}
+@media (max-width: 768px) {
+  .banner .banner-image .star-2 {
+    right: 10px;
+    top: 200px;
+  }
+}
+@media (max-width: 425px) {
+  .banner .banner-image .star-2 {
+    bottom: 20px;
+    right: 10px;
+    font-size: 30px;
+  }
+}
+.banner .banner-image .star-3 {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  font-size: 30px;
+}
+@media (max-width: 768px) {
+  .banner .banner-image .star-3 {
+    bottom: 20px;
+    right: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .banner .banner-image .star-3 {
+    right: 10px;
+  }
+}
+
+.popular .serums {
+  text-align: right;
+}
+
+.recommended .images,
+.image .images {
+  display: flex;
+  gap: 0.9375rem;
+}
+.image img {
+  width: 30%;
+}
+@media (max-width: 425px) {
+  .image img {
+    width: 50%;
+  }
+}
+
+.details a {
+  width: 200px;
+}
+
+.back {
+  color: black;
+  gap: 10px;
+  align-items: baseline;
+  padding-block: 1.875rem;
+}
+.back a {
+  color: black;
+}/*# sourceMappingURL=main.css.map */

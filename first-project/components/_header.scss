@@ -1,0 +1,55 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.navbar {
+  background-color: var.$background-color-primary;
+
+  .menu {
+    @extend %wrap;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: var.$gutter-base;
+      padding-block: var.$gutter-base;
+
+      @include mix.mobile-l-styles {
+        justify-content: center;
+      }
+
+      a {
+        color: var.$text-color-base;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .search {
+    @include mix.flex-container($flex-direction: row);
+    @extend %wrap;
+    @extend %section;
+
+    .search-input {
+      @include mix.flex-container($flex-direction: row);
+      position: relative;
+      width: 50%;
+
+      input {
+        border: 1px solid var.$text-color-base;
+        border-radius: 30px;
+        padding: var.$gutter-medium;
+        width: 100%;
+
+        &:focus + i {
+          display: none;
+        }
+      }
+
+      i {
+        position: absolute;
+        left: 20px;
+      }
+    }
+  }
+}

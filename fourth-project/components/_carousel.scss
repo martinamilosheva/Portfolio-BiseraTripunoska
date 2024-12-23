@@ -1,0 +1,61 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.carousel-item {
+  .button-orange {
+    background-color: var.$btn-orange;
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    transition: color 0.3s ease-in, background-color 0.3s ease-out;
+    width: 250px;
+
+    &:hover {
+      background-color: var.$btn-orange-hover;
+    }
+  }
+}
+
+.second-slide {
+  .row {
+    color: var.$text-color-purple;
+  }
+
+  .purple-button {
+    background-color: var.$btn-purple;
+    color: var.$text-color-purple;
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+.search {
+  .search-input {
+    position: relative;
+
+    input {
+      border: 1px solid var.$text-color-purple;
+      border-radius: 30px;
+      padding: var.$gutter-medium;
+
+      &:focus + i {
+        display: none;
+      }
+    }
+
+    i {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+    }
+  }
+}

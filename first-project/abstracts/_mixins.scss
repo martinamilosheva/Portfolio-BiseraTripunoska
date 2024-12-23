@@ -15,6 +15,15 @@
   }
 }
 
+@mixin flex-container ($flex-direction) {
+  display: flex;
+  flex-direction: $flex-direction;
+  gap: var.$gutter-base;
+  justify-content: center;
+  align-items: center;
+}
+
+
 %section {
   padding-block: (var.$gutter-base * 2);
 
@@ -28,13 +37,17 @@
   margin-inline: auto;
 }
 
-%back-button {
-  display: flex;
-  color: black;
-  gap: 10px;
-  align-items: baseline;
-  padding: 10px;
-  a {
-    color: black;
-  }
+%content-wrap {
+  width: 90%;
+  margin-inline: auto;
+}
+
+%border-top-radius {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+%border {
+  border-top: 1px solid var.$text-color-base;
+  border-bottom: 1px solid var.$text-color-base;
 }

@@ -1,0 +1,69 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.mission {
+  @include mix.flex-container($flex-direction: column);
+  @extend %section;
+  color: var.$text-color-base;
+  text-align: center;
+
+  p {
+    width: 50%;
+  }
+
+  h1 {
+    text-transform: uppercase;
+
+    @include mix.mobile-l-styles {
+      font-size: 30px;
+    }
+  }
+}
+
+.offers {
+  @include mix.flex-container($flex-direction: column);
+  align-items: flex-start;
+  color: var.$text-color-base;
+  @extend %section;
+
+  @include mix.mobile-l-styles {
+    align-items: center;
+  }
+
+  h1 {
+    text-transform: uppercase;
+
+    @include mix.mobile-l-styles {
+      font-size: 30px;
+    }
+  }
+
+  li {
+    display: flex;
+    gap: var.$gutter-medium;
+    align-items: baseline;
+    p {
+      text-transform: uppercase;
+      background-color: var.$background-color-button3;
+      padding: var.$gutter-small;
+      width: 250px;
+      text-align: center;
+      border-radius: 20px;
+
+      @include mix.mobile-l-styles {
+        width: 200px;
+      }
+    }
+
+    i {
+      color: var.$text-color-icon;
+      background-color: var.$background-color-icon1;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      text-align: center;
+    }
+  }
+}

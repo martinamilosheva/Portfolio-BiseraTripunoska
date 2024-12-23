@@ -1,0 +1,72 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+footer {
+  @extend %section;
+  @extend %border;
+  color: var.$text-color-base;
+  background-color: white;
+
+  .wrapper {
+    @extend %wrap;
+
+    .back {
+      display: flex;
+      color: var.$text-color-base;
+      gap: 10px;
+      align-items: baseline;
+      padding-block: var.$gutter-base;
+      a {
+        color: var.$text-color-base;
+      }
+    }
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icons {
+    @include mix.flex-container($flex-direction: column);
+    @include mix.mobile-l-styles {
+      margin-top: var.$gutter-base * 2;
+    }
+
+    ul {
+      display: flex;
+      background-color: var.$background-color-button4;
+      padding: var.$gutter-medium;
+      border-radius: 20px;
+      border: none;
+
+      li {
+        i {
+          color: var.$background-color-button4;
+          background-color: var.$background-color-icon2;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 50%;
+          text-align: center;
+          @include mix.mobile-l-styles {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+
+    a {
+      background-color: var.$background-color-button4;
+      text-transform: uppercase;
+      padding: var.$gutter-medium;
+      border-radius: 20px;
+      color: var.$background-color-icon2;
+      text-align: center;
+    }
+  }
+}
