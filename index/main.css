@@ -136,6 +136,19 @@ main .wrapper .logo img {
     width: 80%;
   }
 }
+main .wrapper .about img {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 250px;
+  line-height: 250px;
+  border-radius: 50%;
+}
+@media (max-width: 425px) {
+  main .wrapper .about img {
+    height: 200px;
+    line-height: 200px;
+  }
+}
 
 .about {
   display: flex;

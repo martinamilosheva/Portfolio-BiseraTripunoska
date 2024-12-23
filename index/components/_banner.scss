@@ -35,5 +35,19 @@ main {
         }
       }
     }
+
+    .about {
+      img {
+        width: fit-content;
+        height: 250px;
+        line-height: 250px;
+        border-radius: 50%;
+
+         @include mix.mobile-l-styles {
+          height: 200px;
+          line-height: 200px;
+        }
+      }
+    }
   }
 }
